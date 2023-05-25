@@ -16,7 +16,7 @@ mongoose
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
-  .then(() => console.log("DB Connection Successfull"))
+  .then(() => console.log("DB Connection Successful"))
   .catch((err) => {
     console.error(err);
   });
@@ -34,4 +34,5 @@ app.use("/api/lists", listRoute);
 
 app.listen(8800, () => {
   console.log("Backend server is running!");
+  
 });
